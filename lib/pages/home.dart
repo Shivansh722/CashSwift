@@ -30,6 +30,8 @@ class HomePage extends StatelessWidget {
                     .collection('users')
                     .doc(FirebaseAuth.instance.currentUser!.uid)
                     .snapshots(),
+                    //hello
+                    //hellow lovers
                 builder: (context, snapshot) {
                   if (snapshot.connectionState == ConnectionState.waiting) {
                     return const CircularProgressIndicator();
